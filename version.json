@@ -1,0 +1,10 @@
+{
+  "appVersion": "1.2.0",
+  "buildId": "20261106-2353",
+  "coreVersion": "0.8.7",
+  "updatedAt": "2026-11-06T23:53:00+09:00",
+  "downloadCenterUrl": "https://ideafactory86.github.io/iccej-rhwp/download.html",
+  "liveWebAppUrl": "https://ideafactory86.github.io/iccej-rhwp/",
+  "apkDownloadUrl": "https://ideafactory86.github.io/iccej-rhwp/인천경실련_한글.apk",
+  "releaseNotes": "인천경실련 실무자 전용 배포 센터 연동 및 GitHub 실시간 자동 업데이트(OTA) 적용"
+}

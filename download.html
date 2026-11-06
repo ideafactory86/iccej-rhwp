@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>인천경실련 한글 - 실무자 전용 앱 설치 및 배포 센터</title>
+    <link rel="icon" type="image/svg+xml" href="./branding/logo-symbol.svg" />
+    <link rel="apple-touch-icon" href="./branding/logo-full.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <style>
+      :root {
+        --primary: #005b9e;
+        --navy: #003f70;
+        --orange: #f08c00;
+        --green: #22a856;
+        --bg: #f1f5f9;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic',
+          'Noto Sans KR', sans-serif;
+        background: linear-gradient(145deg, #e8f1f9 0%, #f4f7fb 100%);
+        color: var(--text);
+        min-height: 100vh;
+        padding: 20px 16px 48px;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .hero-card {
+        background: var(--card);
+        border-radius: 22px;
+        padding: 26px 22px;
+        box-shadow: 0 14px 34px rgba(0, 63, 112, 0.1);
+        text-align: center;
+        border: 1px solid rgba(0, 91, 158, 0.12);
+      }
+      .logo-img {
+        height: 82px;
+        width: auto;
+        object-fit: contain;
+        margin-bottom: 12px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #e6f2ff;
+        color: var(--primary);
+        font-size: 12px;
+        font-weight: 700;
+        padding: 5px 12px;
+        border-radius: 999px;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--navy);
+        margin-bottom: 6px;
+      }
+      .subtitle {
+        font-size: 13.5px;
+        color: var(--muted);
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .action-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .btn-primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 15px 18px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #005b9e 0%, #003f70 100%);
+        color: #ffffff;
+        font-size: 15.5px;
+        font-weight: 800;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 6px 18px rgba(0, 91, 158, 0.25);
+      }
+      .btn-secondary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 14px 18px;
+        border-radius: 14px;
+        background: #eef7f1;
+        color: #146c38;
+        border: 1.5px solid #9ad9b2;
+        font-size: 14.5px;
+        font-weight: 800;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .btn-kakao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 12px;
+        background: #fee500;
+        color: #191919;
+        border: none;
+        font-size: 13.5px;
+        font-weight: 800;
+        cursor: pointer;
+      }
+      .info-card {
+        background: var(--card);
+        border-radius: 18px;
+        padding: 18px 20px;
+        box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+        border: 1px solid #e2e8f0;
+      }
+      .info-card h2 {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--navy);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .step-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 13px;
+        color: #334155;
+        line-height: 1.5;
+      }
+      .step-list li strong {
+        color: var(--primary);
+      }
+      .qr-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding-top: 8px;
+      }
+      .qr-box img {
+        width: 168px;
+        height: 168px;
+        border-radius: 12px;
+        border: 1px solid #cbd5e1;
+        padding: 8px;
+        background: #fff;
+      }
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #0f172a;
+        color: #fff;
+        padding: 11px 18px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 700;
+        display: none;
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-card">
+        <img src="./branding/logo-full.png" alt="인천경실련 공식 로고" class="logo-img" />
+        <div>
+          <span class="badge" id="verBadge">⚡ v1.2.0 · 실시간 자동 업데이트 연동됨</span>
+        </div>
+        <h1>인천경실련 한글</h1>
+        <p class="subtitle">
+          인천경제정의실천시민연합 실무자 전용<br />
+          모바일 아래한글(HWP·HWPX) 뷰어 &amp; 한컴 동일 편집기
+        </p>
+
+        <div class="action-stack">
+          <a href="./인천경실련_한글.apk" download="인천경실련_한글.apk" class="btn-primary">
+            📥 안드로이드 정식 앱(APK) 다운로드
+          </a>
+
+          <a href="./index.html" class="btn-secondary" id="pwaBtn">
+            🚀 설치 없이 바로 열기 (아이폰·갤럭시 공용 웹앱)
+          </a>
+
+          <button type="button" class="btn-kakao" onclick="copyShareMessage()">
+            💬 카카오톡 실무자 단톡방 공지문구 복사하기
+          </button>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h2>📱 갤럭시(안드로이드) 실무자 설치 방법</h2>
+        <ul class="step-list">
+          <li>1. 위 파란색 <strong>[안드로이드 정식 앱(APK) 다운로드]</strong> 버튼을 터치합니다.</li>
+          <li>
+            2. 다운로드된 파일을 열고 <em>"출처를 알 수 없는 앱"</em> 안내가 뜨면
+            <strong>[설정 → 이 출처 허용]</strong>을 켭니다.
+          </li>
+          <li>
+            3. Play 프로텍트 창이 뜨면 <strong>[세부정보 더보기 → 무시하고 설치]</strong>를 누르면 설치가 완료됩니다.
+          </li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h2>🍎 아이폰(iOS) 실무자 홈 화면 앱 설치 방법</h2>
+        <ul class="step-list">
+          <li>1. 사파리(Safari)에서 위 초록색 <strong>[설치 없이 바로 열기]</strong> 버튼을 누릅니다.</li>
+          <li>2. 하단 가운데 <strong>[공유(⬆️) 버튼] → [홈 화면에 추가]</strong>를 터치합니다.</li>
+          <li>
+            3. 바탕화면에 생성된 <strong>인천경실련 한글</strong> 아이콘으로 언제든 실행하며, 업데이트 시 100% 자동으로 최신 버전이 반영됩니다.
+          </li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h2>📷 현장 스캔용 QR코드</h2>
+        <div class="qr-box">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://ideafactory86.github.io/iccej-rhwp/download.html"
+            alt="인천경실련 한글 설치 QR코드"
+          />
+          <span style="font-size: 12px; color: #64748b">
+            휴대폰 카메라로 스캔하면 이 설치 페이지로 바로 연결됩니다.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">복사되었습니다! 카카오톡 채팅방에 붙여넣기 하세요.</div>
+
+    <script>
+      fetch('./version.json?t=' + Date.now())
+        .then((r) => r.json())
+        .then((data) => {
+          if (data && data.appVersion) {
+            document.getElementById('verBadge').textContent =
+              '⚡ v' + data.appVersion + ' (' + (data.buildId || '최신') + ') · 자동 업데이트 연동됨';
+          }
+        })
+        .catch(() => {});
+
+      function copyShareMessage() {
+        const url = window.location.href;
+        const msg =
+          '📢 [인천경실련 한글 모바일 앱 설치 안내]\n\n' +
+          '스마트폰에서 보도자료·성명서·공문서(.hwp/.hwpx)와 표 편집을 아래한글과 동일하게 사용할 수 있는 실무자 전용 앱입니다.\n\n' +
+          '👉 전용 설치 링크: ' +
+          url +
+          '\n\n' +
+          '• 갤럭시(안드로이드): 링크 접속 후 [안드로이드 정식 앱 다운로드] 또는 [바로 열기]\n' +
+          '• 아이폰(iOS): 사파리로 링크 접속 후 [설치 없이 바로 열기] → [공유] → [홈 화면에 추가]';
+        navigator.clipboard.writeText(msg).then(() => {
+          const t = document.getElementById('toast');
+          t.style.display = 'block';
+          setTimeout(() => {
+            t.style.display = 'none';
+          }, 2600);
+        });
+      }
+    </script>
+  </body>
+</html>

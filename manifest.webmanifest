@@ -1,0 +1,25 @@
+{
+  "name": "인천경실련 한글 - 모바일 HWP/HWPX 에디터",
+  "short_name": "인천경실련 한글",
+  "description": "인천경제정의실천시민연합 실무자용 모바일 아래한글(HWP/HWPX) 뷰어 및 편집기",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F7FB",
+  "theme_color": "#005B9E",
+  "icons": [
+    {
+      "src": "./branding/logo-symbol.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./branding/logo-full.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
