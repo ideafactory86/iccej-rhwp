@@ -1,0 +1,10 @@
+{
+  "appVersion": "1.3.0",
+  "buildId": "20261107-0018",
+  "coreVersion": "0.8.7",
+  "updatedAt": "2026-11-07T00:18:00+09:00",
+  "downloadCenterUrl": "https://ideafactory86.github.io/iccej-rhwp/download.html",
+  "liveWebAppUrl": "https://ideafactory86.github.io/iccej-rhwp/",
+  "apkDownloadUrl": "https://github.com/ideafactory86/iccej-rhwp/releases/latest/download/iccej-rhwp.apk",
+  "releaseNotes": "카카오톡·이메일·내파일에서 HWP/HWPX/HML 첨부파일 터치 시 인천경실련 한글 앱으로 즉시 연결·열기 지원"
+}
