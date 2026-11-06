@@ -1,0 +1,10 @@
+{
+  "appVersion": "1.4.0",
+  "buildId": "20261107-0142",
+  "coreVersion": "0.8.7",
+  "updatedAt": "2026-11-07T01:05:00+09:00",
+  "downloadCenterUrl": "https://ideafactory86.github.io/iccej-rhwp/download.html",
+  "liveWebAppUrl": "https://ideafactory86.github.io/iccej-rhwp/",
+  "apkDownloadUrl": "https://github.com/ideafactory86/iccej-rhwp/releases/latest/download/iccej-rhwp.apk",
+  "releaseNotes": "단어 찾기/바꾸기, PDF·인쇄 내보내기, 무료 Gemini AI 초안 자동 작성 및 한국어 음성 받아쓰기 탑재"
+}
