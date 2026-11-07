@@ -1,0 +1,12 @@
+{
+  "appVersion": "1.6.1",
+  "version": "1.6.1",
+  "buildId": "20261107-2125",
+  "buildDate": "20261107-2125",
+  "coreVersion": "0.8.7",
+  "updatedAt": "2026-11-07T21:25:00+09:00",
+  "releaseNotes": "인천경실련 한글 Pro [공식 제작] · 첫 화면 백지(빈 화면) 시작, 문단 선택 시 밑줄/테두리 제거, 상단 전면에 [🔄 업데이트확인] 고정 배치",
+  "downloadCenterUrl": "https://ideafactory86.github.io/iccej-rhwp/download.html",
+  "liveWebAppUrl": "https://ideafactory86.github.io/iccej-rhwp/",
+  "apkDownloadUrl": "https://github.com/ideafactory86/iccej-rhwp/releases/latest/download/iccej-rhwp.apk"
+}
