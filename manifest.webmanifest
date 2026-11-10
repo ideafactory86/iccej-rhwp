@@ -1,0 +1,25 @@
+{
+  "name": "인천경실련 한글 Pro (공식 제작)",
+  "short_name": "인천경실련 한글 Pro",
+  "description": "인천경제정의실천시민연합 공식 개발·제작 AI 모바일 아래한글(HWP/HWPX) 전문가 솔루션",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F7FB",
+  "theme_color": "#005B9E",
+  "icons": [
+    {
+      "src": "./branding/logo-symbol.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./branding/logo-full.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

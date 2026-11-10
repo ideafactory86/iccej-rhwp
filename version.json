@@ -1,0 +1,12 @@
+{
+  "appVersion": "1.7.5",
+  "version": "1.7.5",
+  "buildId": "20261110-2130",
+  "buildDate": "20261110-2130",
+  "coreVersion": "0.8.7",
+  "updatedAt": "2026-11-10T21:30:00+09:00",
+  "releaseNotes": "인천경실련 한글 Pro [공식 제작] · 올인원 슬림 툴바 통합(상단바 중복 제거 & 캔버스 화면 극대화), HWP 회의록 황금비율(24:76) 조판 및 들여쓰기 공백 완벽 정렬, AI 회의록 모달 최적화",
+  "downloadCenterUrl": "https://ideafactory86.github.io/iccej-rhwp/download.html",
+  "liveWebAppUrl": "https://ideafactory86.github.io/iccej-rhwp/",
+  "apkDownloadUrl": "https://github.com/ideafactory86/iccej-rhwp/releases/latest/download/iccej-rhwp.apk"
+}
