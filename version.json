@@ -1,11 +1,11 @@
 {
-  "appVersion": "1.7.6",
-  "version": "1.7.6",
-  "buildId": "20261123-1045",
-  "buildDate": "20261123-1045",
+  "appVersion": "1.7.7",
+  "version": "1.7.7",
+  "buildId": "20261124-1230",
+  "buildDate": "20261124-1230",
   "coreVersion": "0.8.7",
-  "updatedAt": "2026-11-23T10:45:00+09:00",
-  "releaseNotes": "인천경실련 한글 Pro [공식 제작] - 더블클릭/더블탭 단어 블록 지정 및 블록 선택 상태 롱프레스(꾹 누르기) 복사/잘라내기/붙여넣기 팝업 툴바 탑재",
+  "updatedAt": "2026-11-24T12:30:00+09:00",
+  "releaseNotes": "인천경실련 한글 Pro [공식 제작] - 한글 블록 복사 및 시스템 클립보드 연동 최적화 (JS UTF-16 정확 추출, 네이티브 브릿지 + 동기 execCommand 3중 클립보드 보장, Ctrl+C/X/V 단축키 지원)",
   "downloadCenterUrl": "https://ideafactory86.github.io/iccej-rhwp/download.html",
   "liveWebAppUrl": "https://ideafactory86.github.io/iccej-rhwp/",
   "apkDownloadUrl": "https://github.com/ideafactory86/iccej-rhwp/releases/latest/download/iccej-rhwp.apk"
